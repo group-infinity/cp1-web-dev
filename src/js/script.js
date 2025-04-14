@@ -4,3 +4,8 @@ for(let i=1;i<=50;i++){
 
 
 
+//Questão 9 - Diogo
+let string = "123.456";
+let valor = parseFloat(string);
+console.log(valor);
+console.log(typeof valor);
