@@ -27,6 +27,21 @@ for(let i=1;i<=50;i++){
 
 console.log("----------------------------------------------------");
 
+// Questão 8 - Miguel
+console.log("QUESTÃO 8")
+const frase = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas."
+
+console.log("1) Primeira posição de 'em':", frase.indexOf("em"));
+console.log("2) Última posição de 'ia':", frase.lastIndexOf("ia"));
+
+const indiceCiencia = frase.indexOf("ciência");
+console.log(`3) ${frase.slice(indiceCiencia, indiceCiencia + "ciência".length)}`);
+
+const indiceMetodos = frase.indexOf("métodos");
+console.log(`4) ${frase.slice(indiceMetodos, indiceMetodos + "métodos".length)}`);
+
+console.log("----------------------------------------------------");
+
 //Questão 9 - Diogo
 console.log("QUESTÃO 9")
 let string = "123.456";
