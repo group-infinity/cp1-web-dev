@@ -1,3 +1,20 @@
+//Questão 2 - Luara
+//OPERADORES DE COMPARAÇÃO
+const vBrancop = '$250.00';
+const vTintop = '$350.00';
+
+// Convertendo para número 
+const precoBranco = parseFloat(vBrancop.replace('$', ''));
+const precoTinto = parseFloat(vTintop.replace('$', ''));
+
+console.log(precoBranco == precoTinto);   // false, pois compara e nao sao iguais os precos
+console.log(precoBranco >= precoTinto);   // false, poisele não é maior nem igual
+console.log(precoBranco != precoTinto);   // true, pois sao diferentes os precos
+
+
+console.log("----------------------------------------------------");
+
+
 // Questão 3 - Miguel
 console.log("QUESTÃO 3")
 let peso = 60;
