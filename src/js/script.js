@@ -3,7 +3,7 @@
 const vBrancop = '$250.00';
 const vTintop = '$350.00';
 
-// Convertendo para número 
+// Convertendo para número
 const precoBranco = parseFloat(vBrancop.replace('$', ''));
 const precoTinto = parseFloat(vTintop.replace('$', ''));
 
@@ -17,51 +17,56 @@ console.log("----------------------------------------------------");
 
 // Questão 3 - Miguel
 console.log("QUESTÃO 3")
-let peso = 60;
-let altura = 1.80;
-const imc = (peso / (altura * altura));
+let notaVinho = 92; // Altere a nota para testar outras faixas
+let classificacao;
 
 switch (true) {
-    case (imc < 18.5):
-        console.log(`Seu IMC é de ${imc.toFixed(2)}, Você está abaixo do peso.`);
-        break;
-    case (imc <= 24.9):
-        console.log(`Seu IMC é de ${imc.toFixed(2)}, Você está no peso ideal.`);
-        break;
-    case (imc >= 25):
-        console.log(`Seu IMC é de ${imc.toFixed(2)}, Você está acima do peso.`);
-        break;
-    default:
-        console.log("Valor inválido");
+  case (notaVinho < 85):
+    classificacao = "Comum";
+    break;
+  case (notaVinho >= 85 && notaVinho <= 89):
+    classificacao = "Bom";
+    break;
+  case (notaVinho >= 90 && notaVinho <= 94):
+    classificacao = "Excelente";
+    break;
+  case (notaVinho >= 95):
+    classificacao = "Premium";
+    break;
+  default:
+    classificacao = "Nota inválida";
 }
+
+console.log(`Nota do vinho: ${notaVinho} → Classificação: ${classificacao}`);
 
 console.log("----------------------------------------------------");
 
 //Questão 4 - Diogo
 console.log("QUESTÃO 4")
 for(let i=1;i<=50;i++){
-    console.log('O valor é:', i); }
+    console.log(`${i}: Conheça os vinhos especiais da Vinheria Agnello!`);
+}
 
 console.log("----------------------------------------------------");
 
 // Questão 8 - Miguel
 console.log("QUESTÃO 8")
-const frase = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas."
+const frase = "A vinheria é uma arte que envolve tradição, história e muita paixão pela produção de vinhos de qualidade."
 
-console.log("1) Primeira posição de 'em':", frase.indexOf("em"));
+console.log("1) Primeira posição de 'ar':", frase.indexOf("ar"));
 console.log("2) Última posição de 'ia':", frase.lastIndexOf("ia"));
 
-const indiceCiencia = frase.indexOf("ciência");
-console.log(`3) ${frase.slice(indiceCiencia, indiceCiencia + "ciência".length)}`);
+const indicePaixao = frase.indexOf("paixão");
+console.log(`3) ${frase.slice(indicePaixao, indicePaixao + "paixão".length)}`);
 
-const indiceMetodos = frase.indexOf("métodos");
-console.log(`4) ${frase.slice(indiceMetodos, indiceMetodos + "métodos".length)}`);
+const indiceVinhos = frase.indexOf("vinhos");
+console.log(`4) ${frase.slice(indiceVinhos, indiceVinhos + "vinhos".length)}`);
 
 console.log("----------------------------------------------------");
 
 //Questão 9 - Diogo
 console.log("QUESTÃO 9")
-let string = "123.456";
-let valor = parseFloat(string);
-console.log(valor);
-console.log(typeof valor);
+let precoVinho = "89.90";
+let precoConvertido = parseFloat(precoVinho);
+console.log("Antes da conversão:", precoVinho, "| Tipo:", typeof precoVinho);
+console.log("Depois da conversão:", precoConvertido, "| Tipo:", typeof precoConvertido);
