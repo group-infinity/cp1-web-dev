@@ -1,7 +1,7 @@
 function questao2() {
   const res = document.querySelector("#q2 .resposta");
-  const precoBranco = parseFloat('$250.00'.replace('$', ''));
-  const precoTinto = parseFloat('$350.00'.replace('$', ''));
+  const precoBranco = 250.00;
+  const precoTinto = 350.00;
   let texto = `precoBranco == precoTinto: ${precoBranco == precoTinto}\n`;
   texto += `precoBranco >= precoTinto: ${precoBranco >= precoTinto}\n`;
   texto += `precoBranco != precoTinto: ${precoBranco != precoTinto}`;
@@ -19,7 +19,7 @@ function questao3() {
     case (notaVinho >= 95): classificacao = "Premium"; break;
     default: classificacao = "Nota inválida";
   }
-  res.textContent = `Nota do vinho: ${notaVinho} \u2192 Classificação: ${classificacao}`;
+  res.textContent = `Nota do vinho: ${notaVinho} -> Classificação: ${classificacao}`;
 }
 
 function questao4() {
@@ -34,7 +34,10 @@ function questao4() {
 function questao6() {
   const res = document.querySelector("#q6 .resposta");
   let notas = [7, 6.5, 8, 5, 7, 6, 6.2];
-  let soma = notas.reduce((a, b) => a + b, 0);
+  let soma = 0;
+  for (let i = 0; i < notas.length; i++) {
+    soma += notas[i];
+  }
   let media = soma / notas.length;
   let status = media >= 6 ? "Apto a atuar em eventos da vinheria" : "Não apto. Reforce seus estudos sobre vinhos.";
   res.textContent = `Média final das avaliações: ${media.toFixed(2)}\nResultado: ${status}`;
@@ -46,7 +49,12 @@ function questao7() {
   let idade = 25;
   let curso = "Curso de Degustação e Harmonização de Vinhos";
   let ano = 2025;
-  res.textContent = `Nome do estudante: ${nome}\nIdade: ${idade}\nCurso matriculado: ${curso}\nAno de ingresso: ${ano}`;
+  let texto = "";
+  texto += "Nome do estudante: " + nome + "\n";
+  texto += "Idade: " + idade + "\n";
+  texto += "Curso matriculado: " + curso + "\n";
+  texto += "Ano de ingresso: " + ano;
+  res.textContent = texto;
 }
 
 function questao8() {
