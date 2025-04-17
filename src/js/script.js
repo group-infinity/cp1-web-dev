@@ -1,3 +1,16 @@
+function questao1() {
+  const res = document.querySelector("#q1 .resposta");
+  let tipoUva;
+  let comentario = "";
+  let saudacao = "Bem-vindo à Vinheria Agnello!";
+  let texto = `Tipo da uva: ${tipoUva}\n`;
+  texto += `Comentário: '${comentario}'\n`;
+  texto += `Mensagem: ${saudacao}`;
+  res.textContent = texto;
+  console.log(texto)
+}
+
+
 function questao2() {
   const res = document.querySelector("#q2 .resposta");
   const precoBranco = 250.00;
@@ -32,6 +45,18 @@ function questao4() {
   }
   res.textContent = texto;
   console.log(texto)
+}
+
+function questao5() {
+  const usuarioCadastrado = "admin";
+  const senhaCadastrada = "1234";
+  const usuario = prompt("Digite o nome do usuario: ");
+  const senha = prompt("Digite a senha cadastrada: ");
+  if (usuario === usuarioCadastrado && senha === senhaCadastrada){
+      alert("Login realizado com sucesso!");
+  } else {
+      alert("Falha na autenticação. Usuário ou Senha incorretos.");
+  }
 }
 
 function questao6() {
