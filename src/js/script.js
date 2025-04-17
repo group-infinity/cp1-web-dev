@@ -6,6 +6,7 @@ function questao2() {
   texto += `precoBranco >= precoTinto: ${precoBranco >= precoTinto}\n`;
   texto += `precoBranco != precoTinto: ${precoBranco != precoTinto}`;
   res.textContent = texto;
+  console.log(texto)
 }
 
 function questao3() {
@@ -20,6 +21,7 @@ function questao3() {
     default: classificacao = "Nota inválida";
   }
   res.textContent = `Nota do vinho: ${notaVinho} -> Classificação: ${classificacao}`;
+  console.log(`Nota do vinho: ${notaVinho} -> Classificação: ${classificacao}`)
 }
 
 function questao4() {
@@ -29,6 +31,7 @@ function questao4() {
     texto += `${i}: Conheça os vinhos especiais da Vinheria Agnello!\n`;
   }
   res.textContent = texto;
+  console.log(texto)
 }
 
 function questao6() {
@@ -41,6 +44,7 @@ function questao6() {
   let media = soma / notas.length;
   let status = media >= 6 ? "Apto a atuar em eventos da vinheria" : "Não apto. Reforce seus estudos sobre vinhos.";
   res.textContent = `Média final das avaliações: ${media.toFixed(2)}\nResultado: ${status}`;
+  console.log(`Média final das avaliações: ${media.toFixed(2)}\nResultado: ${status}`)
 }
 
 function questao7() {
@@ -55,6 +59,7 @@ function questao7() {
   texto += "Curso matriculado: " + curso + "\n";
   texto += "Ano de ingresso: " + ano;
   res.textContent = texto;
+  console.log(texto)
 }
 
 function questao8() {
@@ -65,6 +70,7 @@ function questao8() {
   texto += `3) Palavra extraída (paixão): ${frase.slice(frase.indexOf("paixão"), frase.indexOf("paixão") + 6)}\n`;
   texto += `4) Palavra extraída (vinhos): ${frase.slice(frase.indexOf("vinhos"), frase.indexOf("vinhos") + 6)}`;
   res.textContent = texto;
+  console.log(texto)
 }
 
 function questao9() {
@@ -74,4 +80,5 @@ function questao9() {
   let texto = `Antes da conversão: ${precoVinho} | Tipo: ${typeof precoVinho}\n`;
   texto += `Depois da conversão: ${precoConvertido} | Tipo: ${typeof precoConvertido}`;
   res.textContent = texto;
+  console.log(texto)
 }
