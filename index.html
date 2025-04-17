@@ -3,31 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>CP1 - WEB/DEV</title>
-    <style>
-      body {
-        background-color: #f9f1e7;
-        font-family: Arial, sans-serif;
-        padding: 30px;
-      }
-      h1 {
-        color: #8b0000;
-      }
-      h2 {
-        margin-top: 20px;
-        color: #333;
-      }
-      #info {
-        font-size: 18px;
-        margin-top: 10px;
-        white-space: pre-line; /* Mantém as quebras de linha */
-      }
-    </style>
   </head>
   <body>
-    <h1>CP1 - WEB/DEV</h1>
-    <h2>Informações do Aluno da Vinharia</h2>
-    <div id="info"></div>
+    <h1>CP1 WEB-DEV</h1>
+    <div class="container">
+      <div class="questao" id="q2">
+        <h2>Questão 2</h2>
+        <p>Compare os preços de dois vinhos e exiba o resultado das comparações utilizando operadores de comparação.</p>
+        <button onclick="questao2()">Executar</button>
+        <div class="resposta"></div>
+      </div>
+
+      <div class="questao" id="q3">
+        <h2>Questão 3</h2>
+        <p>Classifique a nota de um vinho conforme as faixas pré-definidas.</p>
+        <button onclick="questao3()">Executar</button>
+        <div class="resposta"></div>
+      </div>
+
+      <div class="questao" id="q4">
+        <h2>Questão 4</h2>
+        <p>Repita uma mensagem 50 vezes utilizando um laço de repetição.</p>
+        <button onclick="questao4()">Executar</button>
+        <div class="resposta"></div>
+      </div>
+
+      <div class="questao" id="q6">
+        <h2>Questão 6</h2>
+        <p>Calcule a média das avaliações de um enólogo no curso da vinheria e mostre se ele está apto a atuar em eventos.</p>
+        <button onclick="questao6()">Executar</button>
+        <div class="resposta"></div>
+      </div>
+
+      <div class="questao" id="q7">
+        <h2>Questão 7</h2>
+        <p>Mostre os dados pessoais de um estudante do curso de vinhos oferecido pela vinheria.</p>
+        <button onclick="questao7()">Mostrar Info</button>
+        <div class="resposta" id="info"></div>
+      </div>
+
+      <div class="questao" id="q8">
+        <h2>Questão 8</h2>
+        <p>Realize operações com a frase: "A vinheria é uma arte que envolve tradição, história e muita paixão pela produção de vinhos de qualidade."</p>
+        <button onclick="questao8()">Analisar Frase</button>
+        <div class="resposta"></div>
+      </div>
+
+      <div class="questao" id="q9">
+        <h2>Questão 9</h2>
+        <p>Converta o preço de um vinho de string para número e exiba os tipos antes e depois da conversão.</p>
+        <button onclick="questao9()">Converter Preço</button>
+        <div class="resposta"></div>
+      </div>
+    </div>
 
     <script src="src/js/script.js"></script>
   </body>

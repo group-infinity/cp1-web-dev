@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.questao {
+  background-color: #fff8f5;
+  border: 1px solid #dcb;
+  border-left: 6px solid blue;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.questao h2 {
+  margin-top: 0;
+  color: blue;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.resposta {
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
