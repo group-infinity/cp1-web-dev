@@ -24,7 +24,7 @@ function questao2() {
 
 function questao3() {
   const res = document.querySelector("#q3 .resposta");
-  let notaVinho = 92;
+  const notaVinho = prompt("Digite a nota do vinho: ");
   let classificacao;
   switch (true) {
     case (notaVinho < 85): classificacao = "Comum"; break;
